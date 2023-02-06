@@ -26,6 +26,7 @@ body {
 }
 
 main {
+    font-size: 1.03rem;
     height: 100vh;
     width: 60em;
     margin: auto;
@@ -39,7 +40,7 @@ main {
     font-size: 1em;
     width: 12.5em;
     height: 24em;
-    padding: 2.5em 3em 3.5em 3em;
+    padding: 2.8em 3em 3.5em 3em;
 }
 
 .card:nth-child(1) {
@@ -65,22 +66,22 @@ h1 {
     text-transform: uppercase;
     color: var(--Very-light-gray);
     margin: 0;
-    padding: 0.7em 0 0.4em 0;
+    padding: 0.78em 0 0.22em 0;
 }
 
 p {
-    font-size: 0.87em;
+    font-size: 0.9em;
     font-family: 'Lexend Deca', sans-serif;
     color: var(--Transparent-white);
     line-height: 1.7;
-    margin-bottom: 5.6em;
+    margin-bottom: 5.5em;
 }
 
 .btn {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 700;
-    width: 10em;
-    height: 3.33em;
+    width: 11em;
+    height: 3.66em;
     border: 0;
     border-radius: 2em;
     cursor: pointer;
