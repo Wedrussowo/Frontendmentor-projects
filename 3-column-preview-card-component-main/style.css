@@ -38,24 +38,29 @@ main {
     margin-top: 1.4em;
 }
 
-.card {
+.orange {
     font-size: 1em;
     width: 12.5em;
     height: 24em;
     padding: 2.8em 3em 3.5em 3em;
-}
-
-.orange {
     background-color: var(--Bright-orange);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
 .dark-cyan {
+    font-size: 1em;
+    width: 12.5em;
+    height: 24em;
+    padding: 2.8em 3em 3.5em 3em;
     background-color: var(--Dark-cyan);
 } 
 
 .very-dark-cyan {
+    font-size: 1em;
+    width: 12.5em;
+    height: 24em;
+    padding: 2.8em 3em 3.5em 3em;
     background-color: var(--Very-dark-cyan);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -89,33 +94,33 @@ p {
     cursor: pointer;
 }
 
-.card:nth-child(1) .btn {
+.orange .btn {
     color: var(--Bright-orange);
 }
 
-.card:nth-child(2) .btn {
+.dark-cyan .btn {
     color: var(--Dark-cyan);
 } 
 
-.card:nth-child(3) .btn {
+.very-dark-cyan .btn {
     color: var(--Very-dark-cyan);
 }
 
-.card:nth-child(1) .btn:hover {
+.orange .btn:hover {
     background-color: var(--Bright-orange);
     color: var(--Very-light-gray);
     border: 2px solid #fff;
     font-weight: 400; 
 }
 
-.card:nth-child(2) .btn:hover {
+.dark-cyan .btn:hover {
     background-color: var(--Dark-cyan);
     color: var(--Very-light-gray);
     border: 2px solid #fff;  
     font-weight: 400;
 } 
 
-.card:nth-child(3) .btn:hover {
+.very-dark-cyan .btn:hover {
     background-color: var(--Very-dark-cyan);
     border: 2px solid #fff;
     color: var(--Very-light-gray);
