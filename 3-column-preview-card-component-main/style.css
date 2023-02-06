@@ -17,14 +17,14 @@ body {
     box-sizing: border-box;
     width: 100vw;
 }
-/* 
+
 .sr-only {
     display: none;
     position: absolute;
     width: 1px;
     height: 1px;
     left: 1000px;
-} */
+}
 
 main {
     font-size: 1.03rem;
