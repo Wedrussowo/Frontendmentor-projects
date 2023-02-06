@@ -9,6 +9,7 @@
 }
 
 body {
+    background-color: var(--Very-light-gray);
     font-size: 15px;
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Lexend Deca', sans-serif;
@@ -61,7 +62,7 @@ main {
 }
 
 
-h2 {
+.title {
     font-family: 'Big Shoulders Display', cursive;
     font-size: 2.45em;
     text-transform: uppercase;
@@ -124,7 +125,7 @@ p {
 
 @media (max-width: 700px) {
     body {
-            padding-block: 8em;
+            padding-block: 2em;
     }
    
     main {
