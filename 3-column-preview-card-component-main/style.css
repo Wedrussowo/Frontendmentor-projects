@@ -135,6 +135,15 @@ p {
         padding: 0;
     }
 
+    .card {
+        height: 20em;
+        width: 14em;
+    }
+
+    p {
+        margin-bottom: 1.5em;
+    }
+
     .card:nth-child(1) {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
