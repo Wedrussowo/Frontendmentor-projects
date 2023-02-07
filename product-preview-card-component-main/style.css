@@ -109,7 +109,7 @@ main {
     font-size: 0.9rem;
     line-height: 1.6;
     color: var(--Dark-grayish-blue);
-    padding-top: 1.5rem;
+    padding-top: 1.4rem;
 }
 
 .prices {
@@ -133,7 +133,7 @@ main {
 }
 
 .btn {
-    padding-top: 1.6rem;
+    padding-top: 1.7rem;
 }
 
 .btn button {
@@ -143,7 +143,7 @@ main {
     font-weight: bold;
     width: 17.75em;
     height: 3.5em;
-    border-radius: 1em;
+    border-radius: 0.5em;
 }
 
 .btn button:hover {
