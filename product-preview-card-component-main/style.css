@@ -9,7 +9,7 @@
     --White: hsl(0, 0%, 100%);
     --state-button: #134032;
 
-    --ff-primary: 'Fraunces';
+    --ff-primary: "Fraunces", serif;
     --ff-accent: 'Montserrat', sans-serif;
 }
 
@@ -87,7 +87,7 @@ main {
 
 .title-head {
     color: var(--Dark-grayish-blue);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     padding-top: 0; !important;
     font-family: var(--ff-accent);
     text-transform: uppercase;
@@ -95,21 +95,22 @@ main {
 }
 
 .head-description {
+    font-family: var(--ff-primary);
     color: var(--Very-dark-blue);
-    width: 12rem;
-    font-size: 1.75rem;
-    font-weight: bolder;
-    text-shadow: -0.4px 0.5px #000;
-    letter-spacing: 0.12rem;
+    width: 96%;
+    font-size: 2.2rem;
     padding-top: 1rem;
-
+    line-height: 1;
+    font-weight: 1200;
+    margin-right: 0;
 }
 
 .description {
+    font-family: var(--ff-accent);
     font-size: 0.9rem;
     line-height: 1.6;
     color: var(--Dark-grayish-blue);
-    padding-top: 1.4rem;
+    padding-top: 1.2rem;
 }
 
 .prices {
@@ -119,9 +120,11 @@ main {
 }
 
 .actual-price {
+    font-family: var(--ff-primary);
     color: var(--Dark-cyan);
     font-size: 2rem;
     padding-right: 1.25rem;
+
 }
 
 .bfr-discount-price {
@@ -137,6 +140,9 @@ main {
 }
 
 .btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 0;
     color: var(--White);
     font-family: var(--ff-accent);
@@ -188,13 +194,13 @@ main {
     }
     
     .head-description {
-        width: 17rem;
-        font-size: 1.75rem;
+        width: 18rem;
+        font-size: 2rem;
         padding-top: 0.6rem;
     }
     
     .description {
-        font-size: 0.95rem;
+        font-size: 0.88rem;
         padding-top: 1rem;
     }
 
