@@ -47,9 +47,6 @@ p {
     background-color: var(--White);
 }
 
-/* padding utility classes */
-
-
 body {
     height: 100vh;
     display: flex;
