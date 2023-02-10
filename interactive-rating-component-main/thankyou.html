@@ -19,18 +19,20 @@
     />
 
     <title>Frontend Mentor | Interactive rating component</title>
-
   </head>
   <body class="bg-primary">
-    <main class="bg-component dsp-flex">
+    <main id="thankyou" class="bg-component dsp-flex">
       <header>
-        <img class="terminal-logo"
+        <img
+          class="terminal-logo"
           src="images/illustration-thank-you.svg"
           alt="an illustration showing a terminal, bank card and a receipt"
         />
       </header>
       <section class="dsp-flex">
-        <div class="inform-choice txt-align"><h2>You selected 4 out of 5</h2></div>
+        <div class="inform-choice txt-align">
+          <h2>You selected <span id="rateNumber"></span> out of 5</h2>
+        </div>
         <h1 class="title txt-align">Thank you!</h1>
 
         <p class="description txt-align description-after-submit">
@@ -40,6 +42,11 @@
       </section>
     </main>
 
-    <script src="script.js"></script>
+    <script>
+            window.addEventListener('load', function () {
+        var value = sessionStorage.getItem('value')
+        rateNumber.innerHTML = value
+      })
+    </script>
   </body>
 </html>

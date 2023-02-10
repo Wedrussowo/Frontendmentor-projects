@@ -129,22 +129,24 @@ main {
 }
 
 .submit-btn {
+    font-family: var(--ff-main);
     width: 21.4rem;
     color: var(--White);
     height: 3rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.8px;
     font-size: 1rem;
     border-radius: 3rem;
     border: none;
+
 }
 
-.submit-btn:hover {
+.submit-hover:hover {
     background-color: var(--White);
     color: var(--Orange);
-    font-weight: bold;
     cursor: pointer;
 }
+
 
 /* only for ThankYou.html classes */
 
@@ -174,6 +176,9 @@ main {
     font-size: 0.95rem;
 }
 
+.dsp-none {
+    display: none;
+}
 /* Media, smaller screens */
 
 @media (max-width: 450px) {

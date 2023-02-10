@@ -1,75 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
-</head>
-<body class="bg-primary">
+    <title>Frontend Mentor | Interactive rating component</title>
 
-  <main class="bg-component">
-    <header class="circle-box no-hover">
-      <img src="images/icon-star.svg" alt="Logo of five-pointed orange star"/>
-    </header>
-    <section>
+  </head>
+  <body id="submit" class="bg-primary">
+    <main class="bg-component">
+      <header class="circle-box no-hover">
+        <img
+          src="images/icon-star.svg"
+          alt="Logo of five-pointed orange star"
+        />
+      </header>
+      <section>
         <!-- Rating state start -->
-      <h1 class="title">How did we do?</h1>
+        <h1 class="title">How did we do?</h1>
 
-      <p class="description">Please let us know how we did with your support request. All feedback is appreciated 
-      to help us improve our offering!</p>
+        <p class="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
 
         <div class="rates">
-          <div class="rate-btn circle-box">1</div>
-          <div class="rate-btn circle-box">2</div>
-          <div class="rate-btn circle-box">3</div>
-          <div class="rate-btn circle-box">4</div>
-          <div class="rate-btn circle-box">5</div>
+          <div class="rate-btn circle-box" onclick="getValue(1)">1</div>
+          <div class="rate-btn circle-box" onclick="getValue(2)">2</div>
+          <div class="rate-btn circle-box" onclick="getValue(3)">3</div>
+          <div class="rate-btn circle-box" onclick="getValue(4)">4</div>
+          <div class="rate-btn circle-box" onclick="getValue(5)">5</div>
         </div>
         <div class="Submit">
-          <button class="submit-btn bg-orange">Submit</button>
+          <a href="thankyou.html"
+            ><button type="submit" class="submit-btn bg-orange">Submit</button></a
+          >
         </div>
-    </section>
-  </main>
-
-
-
-
-  
-
-  
-
-  
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected Add rating here out of 5 -->
-
-  <!-- Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
-
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>. -->
-  </div>
-  <script src="script.js"></script>
-</body>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
