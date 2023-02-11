@@ -19,25 +19,29 @@
     />
 
     <title>Frontend Mentor | Interactive rating component</title>
-
   </head>
   <body id="submit" class="bg-primary">
     <main class="bg-component">
+      <!-- The header with the star logo -->
       <header class="circle-box no-hover">
         <img
           src="images/icon-star.svg"
           alt="Logo of five-pointed orange star"
         />
       </header>
+
+      <!-- The main section with rating state and submit button -->
       <section>
         <!-- Rating state start -->
         <h1 class="title">How did we do?</h1>
 
+        <!-- Introduction text -->
         <p class="description">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
 
+        <!-- The buttons for rating -->
         <div class="rates">
           <div class="rate-btn circle-box" onclick="getValue(1)">1</div>
           <div class="rate-btn circle-box" onclick="getValue(2)">2</div>
@@ -45,10 +49,13 @@
           <div class="rate-btn circle-box" onclick="getValue(4)">4</div>
           <div class="rate-btn circle-box" onclick="getValue(5)">5</div>
         </div>
+
         <div class="Submit">
-          <a href="thankyou.html"
-            ><button type="submit" class="submit-btn bg-orange">Submit</button></a
-          >
+          <!-- Link to thank-you page -->
+          <a href="thankyou.html">
+            <!-- submit button -->
+            <button type="submit" class="submit-btn bg-orange">Submit</button>
+          </a>
         </div>
       </section>
     </main>

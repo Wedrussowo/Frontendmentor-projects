@@ -22,6 +22,8 @@
   </head>
   <body class="bg-primary">
     <main id="thankyou" class="bg-component dsp-flex">
+
+      <!-- The header with the terminal logo -->
       <header>
         <img
           class="terminal-logo"
@@ -29,8 +31,11 @@
           alt="an illustration showing a terminal, bank card and a receipt"
         />
       </header>
+
+      <!-- The main section with thanks -->
       <section class="dsp-flex">
         <div class="inform-choice txt-align">
+          <!-- text indicating which rate has been selected -->
           <h2>You selected <span id="rateNumber"></span> out of 5</h2>
         </div>
         <h1 class="title txt-align">Thank you!</h1>
@@ -43,6 +48,7 @@
     </main>
 
     <script>
+            // function that onload takes value of selected rate and places it into the <span #rateNumber >
             window.addEventListener('load', function () {
         var value = sessionStorage.getItem('value')
         rateNumber.innerHTML = value
