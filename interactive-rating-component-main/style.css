@@ -133,7 +133,9 @@ main {
 
 .description {
     color: var(--Medium-Grey);
+    font-weight: 400;
     line-height: 1.6;
+    font-size: 0.938rem;
 }
 
 .rates {
