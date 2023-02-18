@@ -22,7 +22,7 @@
   </head>
   <body id="submit" class="bg-primary">
     <main class="bg-component">
-      <article class="before-submit">
+      <section class="before-submit">
         <!-- The header with the star logo -->
         <header class="circle-box-star">
           <img
@@ -31,14 +31,14 @@
           />
         </header>
         <!-- The main section with rating state and submit button -->
-        <section class="section-bfr">
+        <div>
           <!-- Rating state start -->
           <h1 class="title">How did we do?</h1>
           <!-- Introduction text -->
-          <h2 class="description">
+          <p class="description">
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
-        </h2>
+        </p>
           <!-- The buttons for rating -->
           <div class="rates">
             <input
@@ -70,11 +70,11 @@
               <!-- submit button -->
               <input type="submit" value="Submit" class="submit-btn bg-orange inaccessible">
             </a>
+          </div>
         </section>
-      </article>
 
        <!-- hidden article that is displayed after pressing submit -->
-      <article class="after-submit display-none">
+      <section class="after-submit display-none">
         <!-- The header with the terminal logo -->
         <header class="dsp-flex" style="margin-top: 1rem;">
           <img
@@ -84,19 +84,19 @@
         </header>
 
         <!-- The main section with thanks -->
-        <section class="dsp-flex">
+        <div class="dsp-flex">
           <div class="inform-choice txt-align">
             <!-- text indicating which rate has been selected -->
             <h2>You selected <span id="rate-number"></span> out of 5</h2>
           </div>
           <h1 class="title txt-align">Thank you!</h1>
 
-          <h2 class="description txt-align description-after-submit">
+          <p class="description txt-align description-after-submit">
             We appreciate you taking the time to give a rating. If you ever need
             more support, don’t hesitate to get in touch!
-        </h2>
-        </section>
-      </article>
+        </p>
+        </div>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>
