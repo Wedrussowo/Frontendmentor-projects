@@ -1,0 +1,233 @@
+:root {
+
+    /* ### Primary colors*/
+    
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    
+    /* ### Neutral colors */
+    
+    --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+    --Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    
+    /* ### Font family */
+    
+    --ff-main: 'Outfit', sans-serif;
+    
+    /* ### Font size */
+
+    font-size: clamp(0.9375rem, 0.8715rem + 0.2817vw, 1.125rem);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+figure,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+    text-decoration: none;
+    color: var(--White);
+}
+
+body {
+    font-family: var(--ff-main);
+    background-color: var(--Very-dark-blue-mainBG);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.sr-only {
+    display: none;
+}
+
+main {
+    background-color: var(--Very-dark-blue-cardBG);
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem;
+    border-radius: 1rem;
+    max-width: 19.6rem;
+    box-shadow: 5px 10px 20px 8px hsl(217, 78%, 5%);
+    -webkit-box-shadow: 5px 10px 20px 8px hsl(217, 78%, 5%);
+    -moz-box-shadow: 5px 10px 20px 8px hsl(217, 78%, 5%);
+}
+
+.main-picture img {
+    max-width: 100%;
+    display: block;
+}
+
+.main-picture {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icon-view {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.50);
+    opacity: 0;
+    transition: 0.7s ease-out;
+}
+
+.icon-view:hover {
+    opacity: 1;
+    transition: 0.25s;
+}
+
+
+.nft-title {
+    padding-top: 1.35rem;
+    color: var(--White);
+    font-size: 1.2em;
+    display: flex;
+}
+
+.description {
+    padding-top: 0.85rem;
+    color: var(--Soft-blue);
+    line-height: 1.45;
+}
+
+.price-and-time-left {
+    padding-block: 1.3rem 1.35rem;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    color: var(--Cyan);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.time-left {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: var(--Soft-blue);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.price img,
+.time-left img {
+    margin-right: 0.4rem;
+}
+
+.creation-of {
+    display: flex;
+    align-items: center;
+    border-top: 0.1rem solid var(--Very-dark-blue-line);
+    padding-block: 0.85rem 0.5rem;
+}
+
+.avatar {
+    max-width: 1.85rem;
+    overflow: hidden;
+    border: 0.1rem solid var(--White);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+.avatar img {
+    max-width: 100%;
+    display: block;
+}
+
+.avatar:hover {
+    transform: scale(4);
+    transition: 0.2s;
+}
+
+.creation-of h4 {
+    font-size: 0.9rem;
+    color: var(--Soft-blue);
+    font-weight: 400;
+    display: flex;
+    margin-left: 1rem;
+}
+
+.creation-of h4 a {
+    color: var(--White);
+}
+
+.nft-title a,
+.creation-of h4 a,
+.attribution a {
+    transition: 0.7s ease-out;
+}
+
+.creation-of h4 a {
+    margin-left: 0.3rem;
+}
+
+.nft-title a:hover,
+.creation-of h4 a:hover,
+.footkinda a:hover {
+    transform: scale(0.98);
+    color: var(--Cyan);
+    transition: transform 0.1s;
+}
+
+.attribution {
+    position: absolute;
+    top: clamp(35rem, 320px + 51vh, 380px + 51vh);
+    color: var(--Very-dark-blue-line);
+    text-shadow: 7px 7px 6px rgb(0, 0, 0);
+}
+
+.attribution a {
+    margin-left: 0.1rem;
+}
+
+.footkinda {
+    font-size: 1rem;
+    display: flex;
+    float: left;
+}
+
+@media screen and (max-width: 400px) {
+    .footkinda {
+        float: none;
+        flex-direction: column;
+    }
+    
+}
