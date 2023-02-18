@@ -39,7 +39,7 @@ p {
     margin: 0;
 }
 
-/* background color Utility classes */
+/* Utility classes */
 
 .bg-primary {
     background-color: var(--Very-Dark-Blue);
@@ -57,9 +57,17 @@ p {
 background-color: var(--Dark-Blue);
 }
 
+.display-none {
+    display: none;
+}
+
+.inaccessible {
+    opacity: 0.5;
+}
+
 /* circle shape */
 
-.circle-box {
+.circle-box-star {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,10 +77,22 @@ background-color: var(--Dark-Blue);
     border-radius: 50%;
 }
 
+.circle-box {
+    color: var(--Medium-Grey);
+    font-family: var(--ff-main);
+    width: 3.1rem;
+    height: 3.1rem;
+    background-color: var(--Dark-Blue);
+    border-radius: 50%;
+    border: none;
+    transition: 0.15s ease;
+}
+
 .circle-box:hover {
     background-color: var(--Orange);
     color: var(--White);
     cursor: pointer;
+    transition: 0.2s ease-in !important;
 }
 
 /* Javascript classes */
@@ -80,18 +100,14 @@ background-color: var(--Dark-Blue);
 .selected-rate {
     background-color: var(--Medium-Grey);
     color: var(--White);
+
 }
 
 .selected-rate:hover {
     background-color: var(--Medium-Grey);
     color: var(--White);
     cursor: default;
-}
-
-
-.no-hover:hover {
-    background-color: var(--Dark-Blue);
-    cursor: default;
+    transition: 0.1s ease-in;
 }
 
 body {
@@ -138,7 +154,7 @@ main {
     font-size: 1rem;
     border-radius: 3rem;
     border: none;
-
+    transition: 0.1s ease-in;
 }
 
 .submit-hover:hover {
@@ -147,8 +163,7 @@ main {
     cursor: pointer;
 }
 
-
-/* only for ThankYou.html classes */
+/* only for .aftersubmit article */
 
 .dsp-flex {
     display: flex;
@@ -176,19 +191,10 @@ main {
     font-size: 0.95rem;
 }
 
-.dsp-none {
-    display: none;
-}
 /* Media, smaller screens */
 
 @media (max-width: 450px) {
     main{
-        transform: scale(0.85);
-    }
-}
-
-@media (max-width: 750px) {
-    .submit-btn:hover {
-        cursor: default;
+        transform: scale(0.9);
     }
 }
