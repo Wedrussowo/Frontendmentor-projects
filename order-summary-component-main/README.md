@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/Wedrussowo/Frontendmentor-projects/tree/main/order-summary-component-main)
-- Live Site URL: (https://wedrussowo.github.io/Frontendmentor-projects/order-summary-component-main/)
+- Solution URL: [Solution URL](https://github.com/Wedrussowo/Frontendmentor-projects/tree/main/order-summary-component-main)
+- Live Site URL: [Live Site URL](https://wedrussowo.github.io/Frontendmentor-projects/order-summary-component-main/)
 
 ### Built with
 
@@ -42,5 +42,5 @@ I started to better understand grid with this project.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Wedrussowo)
+- Frontend Mentor - [@Wedrussowo](https://www.frontendmentor.io/profile/Wedrussowo)
 
