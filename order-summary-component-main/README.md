@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Wedrussowo/Frontendmentor-projects/tree/main/order-summary-component-main)
+- Live Site URL: (https://wedrussowo.github.io/Frontendmentor-projects/order-summary-component-main/)
 
 ### Built with
 
