@@ -1,0 +1,197 @@
+:root {
+  /*                      ### Colors area ###                       */
+  /* Primary */
+
+  --intro-and-email-sign-up-background: hsl(217, 28%, 15%);
+  --main-background: hsl(218, 28%, 13%);
+  --footer-background: hsl(216, 53%, 9%);
+  --testimonials-background-: hsl(219, 30%, 18%);
+
+  /* Accent */
+
+  --Cyan-inside-call-to-action-gradient: hsl(176, 68%, 64%);
+  --Blue-inside-call-to-action-gradient: hsl(198, 60%, 50%);
+  --Light-Red-error-: hsl(0, 100%, 63%);
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+
+  /*                      ### Font area ###                        */
+
+  --font-family-headings: 'Raleway', sans-serif;
+  --font-family-body: 'Open Sans', sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+  --fs-900: 5rem;
+
+  font-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.align-start {
+  text-align: start;
+}
+
+body {
+  background-color: var(--main-background);
+  min-height: 100vh;
+  font-family: var(--font-family-body);
+}
+
+p {
+  color: white;
+  opacity: 0.7;
+  text-align: center;
+}
+
+header {
+  background-color: var(--intro-and-email-sign-up-background);
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  padding-inline: 1.5rem;
+  padding-block: 1.5rem;
+}
+
+.ul-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-self: end;
+}
+
+.ul-nav li {
+  color: var(--White);
+  opacity: 0.7;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.intro {
+  background-color: var(--intro-and-email-sign-up-background);
+  background-image: url('images/bg-curvy-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: grid;
+  background-size: 100% 30%;
+  padding: 2rem;
+}
+
+@media (min-width: 1200px) {
+    .intro {
+        background-image: url('images/bg-curvy-mobile.svg');
+    }
+}
+
+h1 {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-bold);
+  font-family: var(--font-family-headings);
+  text-align: center;
+  color: var(--White);
+  line-height: 1.35;
+  padding-top: 2rem;
+}
+
+.intro p {
+  padding-block: 1rem 2rem;
+}
+
+.get-started-btn {
+  color: var(--White);
+  font-weight: var(--fw-bold);
+  justify-self: center;
+  padding: 1rem 6rem;
+  background: linear-gradient(
+    to right,
+    var(--Cyan-inside-call-to-action-gradient),
+    var(--Blue-inside-call-to-action-gradient)
+  );
+  border: none;
+  border-radius: 2rem;
+}
+
+h2 {
+  font-family: var(--font-family-headings);
+  font-size: var(--fs-500);
+  color: var(--White);
+  font-weight: var(--fw-bold);
+}
+
+.advantage-presentation div {
+  display: grid;
+  place-items: center;
+  padding: 6rem 2rem 0 2rem;
+}
+
+.advantage-presentation div img {
+  width: 4rem;
+}
+
+.advantage-presentation div h2 {
+  padding: 2.5rem 0 1rem 0;
+}
+
+.summary {
+  display: grid;
+  padding: 10rem 0;
+  padding-inline: 2rem;
+}
+
+.stay-productive-img {
+  padding-inline: 0.5rem;
+  padding-bottom: 4rem;
+}
+
+.summary h2 {
+  padding-bottom: 1.5rem;
+}
+
+.summary p {
+  padding-bottom: 1.5rem;
+}
+
+.summary-btn {
+  color: var(--Cyan-inside-call-to-action-gradient);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: start;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  text-align: start;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-underline-position: 2rem;
+  background-color: rgba(0, 0, 255, 0);
+  border: none;
+}
+
+footer {
+    background-color: var(--footer-background);
+}
