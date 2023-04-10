@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css/style.css" />
+    <link rel="stylesheet" href="main.css/header.css">
+    <link rel="stylesheet" href="main.css/intro.css">
+    <link rel="stylesheet" href="main.css/advantage-presentation.css">
+    <link rel="stylesheet" href="main.css/summary.css">
+    <link rel="stylesheet" href="main.css/reviews.css">
+    <link rel="stylesheet" href="main.css/footer.css">
+    <link rel="stylesheet" href="fontello-6b34f91d/css/fontello.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -87,100 +94,113 @@
 
       <section class="summary">
         <img class="stay-productive-img" src="images/illustration-stay-productive.png" alt="">
-        <h2>Stay productive, wherever you are</h2>
-        <p class="align-start">
-          Never let location be an issue when accessing your files. Fylo has you
-          covered for all of your file storage needs.
-        </p>
-        <p class="align-start">
-          Securely share files and folders with friends, family and colleagues
-          for live collaboration. No email attachments required.
-        </p>
-        <button class="summary-btn">
-          See how Fylo works
-          <img src="images/icon-arrow.svg" alt="">
-        </button>
+        <div>
+          <h2>Stay productive, wherever you are</h2>
+          <p class="align-start">
+            Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.
+          </p>
+          <p class="align-start">
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required.
+          </p>
+          <button class="summary-btn">
+            See how Fylo works
+            <img src="images/icon-arrow.svg" alt="">
+          </button>
+        </div>
       </section>
     </main>
 
     <section class="reviews">
-      <img src="images/bg-quotes.png" alt="">
-      <div>
+      <div class="testimonials-cell">
+        <img class="quotes" src="images/bg-quotes.png" alt="">
         <p class="align-start">
           Fylo has improved our team productivity by an order of magnitude. Since
           making the switch our team has become a well-oiled collaboration machine.
         </p>
-        <img src="images/profile-1.jpg" alt="">
-        <h3>Satish Patel</h3> 
-        <h4>Founder & CEO, Huddle</h4>
+        <div class="profile">
+          <img src="images/profile-1.jpg" alt="">
+          <h3>Satish Patel</h3>
+          <h4>Founder & CEO, Huddle</h4>
+        </div>
       </div> 
 
-      <div>
+      <div class="testimonials-cell">
         <p class="align-start">
           Fylo has improved our team productivity
           by an order of magnitude. Since making the switch our team has become a
           well-oiled collaboration machine.
         </p> 
-        <img src="images/profile-2.jpg" alt="">
-        <h3>Bruce McKenzie</h3> 
-        <h4>Founder & CEO, Huddle</h4>
+        <div class="profile">
+          <img src="images/profile-2.jpg" alt="">
+          <h3>Bruce McKenzie</h3>
+          <h4>Founder & CEO, Huddle</h4>
+        </div>
       </div>
 
-      <div>
+      <div class="testimonials-cell">
         <p class="align-start">
           Fylo has improved our team productivity by an order of magnitude. Since
           making the switch our team has become a well-oiled collaboration machine.
         </p>
-        <img src="images/profile-3.jpg" alt="">
-        <h3>Iva Boyd</h3> 
-        <h4>Founder & CEO, Huddle</h4>
+        <div class="profile">
+          <img src="images/profile-3.jpg" alt="">
+          <h3>Iva Boyd</h3>
+          <h4>Founder & CEO, Huddle</h4>
+        </div>
       </div>
     </section>
 
-    <section class="starter">
-      <h2>Get early access today</h2> 
-      <p>
-        It only takes a minute to sign up and our free
-        starter tier is extremely generous. If you have any questions, our support
-        team would be happy to help you.
-      </p> 
-
-      <form>
-        <input type="email">
-        <button type="submit">Get Started For Free</button>
-      </form>
-    </section>
-
     <footer>
-      <img src="images/logo.svg" alt="">
-      <img src="images/icon-location.svg" alt="">
-      <p class="align-start">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua
-      </p>
+      <div class="starter">
+        <h2>Get early access today</h2> 
+        <p>
+          It only takes a minute to sign up and our free
+          starter tier is extremely generous. If you have any questions, our support
+          team would be happy to help you.
+        </p> 
+  
+        <form>
+          <input type="email" placeholder="email@example.com">
+          <button type="submit">Get Started For Free</button>
+        </form>
+      </div>
+      <img class="logo" src="images/logo.svg" alt="">
 
-      <ul>
+
+      <ul class="contact-details">
+      <li><img src="images/icon-location.svg" alt=""></li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua
+        </li>
         <li><img src="images/icon-phone.svg" alt=""></li>
         <li>+1-543-123-4567</li>
         <li><img src="images/icon-email.svg" alt=""></li>
         <li>example@fylo.com</li>
       </ul>
 
-      <ul>
+      <ul class="about-us" data-spacing="large">
         <li>About Us</li>
         <li>Jobs</li> 
         <li>Press</li> 
         <li>Blog</li>
       </ul>
 
-      <ul>
+      <ul class="contact-us">
         <li>Contact Us</li> 
         <li>Terms</li> 
         <li>Privacy</li>
       </ul>
 
-    </footer>
+      <div class="media">
+        <i class="icon-facebook-1"></i>
+        <i class="icon-twitter"></i>
+        <i class="icon-instagram"></i>
 
+      </div>
+    </footer>
   </body>
 
 </html>
