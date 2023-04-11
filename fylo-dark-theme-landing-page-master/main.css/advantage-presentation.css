@@ -1,3 +1,7 @@
+.advantage-presentation {
+  padding-top: 5rem;
+}
+
 .advantage-presentation div {
     display: grid;
     place-items: center;

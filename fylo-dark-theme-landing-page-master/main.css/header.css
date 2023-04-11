@@ -2,14 +2,19 @@ header {
     background-color: var(--intro-and-email-sign-up-background);
     display: grid;
     grid-template-columns: auto auto;
-    padding-inline: 1.5rem;
-    padding-block: 1.5rem;
+    padding-inline: 
+    clamp(1.5rem, -0.7297rem + 9.5135vw, 7rem) 
+    1.5rem;
+    padding-block: 
+    clamp(1.5rem, -0.527rem + 8.6486vw, 6.5rem) 
+    1.5rem;
   }
   
   header img {
-    width: 6rem;
+    width: clamp(6rem, 2.7568rem + 13.8378vw, 14rem);
   }
-  
+
+
   .ul-nav {
     list-style: none;
     padding: 0;
@@ -18,9 +23,18 @@ header {
   }
   
   .ul-nav li {
-    font-size: 0.9rem;
+    font-size: clamp(0.9rem, 0.8189rem + 0.3459vw, 1.1rem);
     color: var(--White);
     opacity: 0.7;
     display: inline-block;
-    padding: 0.5rem;
+    margin-top: clamp(0.5rem, 0.0946rem + 1.7297vw, 1.5rem);
+    margin-right: clamp(0.5rem, -1.1216rem + 6.9189vw, 4.5rem);
   }
+
+  @media (min-width: 1440px) {
+    header {
+      place-content: center;
+      column-gap: 55rem;
+    }
+  }
+  

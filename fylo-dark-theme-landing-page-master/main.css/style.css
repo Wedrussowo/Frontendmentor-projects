@@ -60,9 +60,10 @@ svg {
 body {
   background-color: var(--main-background);
   min-height: 100vh;
+  min-width: 100vw;
   font-family: var(--font-family-body);
   display: grid;
-  place-content: start;
+  place-content: center;
 }
 
 h2 {

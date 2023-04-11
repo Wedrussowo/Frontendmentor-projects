@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link
       rel="icon"
@@ -32,9 +33,9 @@
   </head>
   <body>
     <header>
-      <img src="images/logo.svg" alt="">
+      <img src="images/logo.svg" data-aos="fade-in" data-aos-duration="1500" alt="">
 
-      <ul class="ul-nav">
+      <ul class="ul-nav" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="100">
         <li>Features</li>
         <li>Team</li>
         <li>Sign In</li>
@@ -43,18 +44,19 @@
 
     <main>
       <section class="intro">
-        <img src="images/illustration-intro.png" alt="">
-        <h1>All your files in one secure location, accessible anywhere.</h1>
-        <p>
+        <img src="images/illustration-intro.png" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="300" alt="">
+        <h1 data-aos="fade-in" data-aos-delay="300" data-aos-duration="2500">All your files in one secure location, accessible anywhere.</h1>
+        <p data-aos="fade-in" data-aos-duration="1500">
           Fylo stores all your most important files in one secure location.
           Access them wherever you need, share and collaborate with friends
           family, and co-workers.
         </p>
-        <button class="get-started-btn">Get Started</button>
+        <button class="get-started-btn" data-aos="fade-in" data-aos-duration="1500"
+        data-aos-once="true">Get Started</button>
       </section>
 
       <section class="advantage-presentation">
-        <div>
+        <div data-aos="fade-up">
           <img src="images/icon-access-anywhere.svg" alt="">
           <h2>Access your files, anywhere</h2>
           <p>
@@ -63,7 +65,7 @@
           </p>
         </div>
 
-        <div>
+        <div data-aos="fade-up" data-aos-delay="500">
           <img src="images/icon-security.svg" alt="">
           <h2>Security you can trust</h2>
           <p>
@@ -72,7 +74,7 @@
           </p>
         </div>
 
-        <div>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
           <img src="images/icon-collaboration.svg" alt="">
           <h2>Real-time collaboration</h2>
           <p>
@@ -81,7 +83,7 @@
           </p>
         </div>
 
-        <div>
+        <div data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="1000">
           <img src="images/icon-any-file.svg" alt="">
           <h2>Store any type of file</h2>
           <p>
@@ -201,6 +203,14 @@
 
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        delay: 100
+      });
+    </script>
   </body>
 
 </html>

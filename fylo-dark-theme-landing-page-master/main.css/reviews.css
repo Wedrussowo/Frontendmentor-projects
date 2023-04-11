@@ -1,6 +1,6 @@
 .reviews {
     padding-inline: 3rem;
-    padding-bottom: clamp(19rem, 24.6034rem + -8.9744vw, 22.5rem);
+    padding-bottom: 23.5rem;
     position: relative;
     display: grid;
   }

@@ -6,6 +6,7 @@
     display: grid;
     background-size: 100% 30%;
     padding: 2rem;
+    
   }
 
   .intro img {
@@ -51,8 +52,8 @@
     font-weight: var(--fw-bold);
     justify-self: center;
     padding: 
-        clamp(1rem, 0.7973rem + 0.8649vw, 1.5rem)
-        clamp(6rem, 5.473rem + 2.2486vw, 7.3rem);
+        1.2rem 
+        6.7rem;
     background: linear-gradient(
       to right,
       var(--Cyan-inside-call-to-action-gradient),

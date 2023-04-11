@@ -1,6 +1,6 @@
 .summary {
     display: grid;
-    padding: 10rem 0;
+    padding-block: 10rem 9rem;
     padding-inline: 2rem;
   }
   
