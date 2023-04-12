@@ -28,8 +28,23 @@ header {
     opacity: 0.7;
     display: inline-block;
     margin-top: clamp(0.5rem, 0.0946rem + 1.7297vw, 1.5rem);
-    margin-right: clamp(0.5rem, -1.1216rem + 6.9189vw, 4.5rem);
+    margin-right: clamp(0.5rem, -1.1216rem + 6.9189vw, 4.3rem);
   }
+
+  .ul-nav li a:hover {
+    font-weight: var(--fw-bold);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+  .ul-nav li a::before {
+    display: block;
+    content: attr(title);
+    font-weight: var(--fw-bold);
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
 
   @media (min-width: 1440px) {
     header {

@@ -63,6 +63,11 @@
     border-radius: 5rem;
     box-shadow: 0.1rem 0.2rem 0.7rem -0.3rem #000;
   }
+
+  .get-started-btn:hover {
+    cursor: pointer;
+    background: var(--Cyan-inside-call-to-action-gradient);
+  }
   
   @media (min-width: 600px) {
     .get-started-btn {

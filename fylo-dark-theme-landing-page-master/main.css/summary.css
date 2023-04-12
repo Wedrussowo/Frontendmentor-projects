@@ -21,7 +21,7 @@
   }
   
   .summary-btn {
-    color: var(--Cyan-inside-call-to-action-gradient);
+    
     font-size: clamp(0.85rem, 0.6697rem + 0.7692vw, 1.15rem);
     display: flex;
     align-items: center;
@@ -34,6 +34,10 @@
     background-color: rgba(0, 0, 255, 0);
     border: none;
     border-bottom: 1px solid var(--Cyan-inside-call-to-action-gradient);
+  }
+
+  .summary-btn a {
+    color: var(--Cyan-inside-call-to-action-gradient);
   }
   
   .summary-btn img {

@@ -32,18 +32,18 @@
     </title>
   </head>
   <body>
-    <header>
-      <img src="images/logo.svg" data-aos="fade-in" data-aos-duration="1500" alt="">
+    <header data-aos="fade-in" data-aos-duration="2000" data-aos-delay="300">
+      <img src="images/logo.svg" alt="">
 
-      <ul class="ul-nav" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="100">
-        <li>Features</li>
-        <li>Team</li>
-        <li>Sign In</li>
+      <ul class="ul-nav">
+        <li><a href="#" title="features">features</a></li>
+        <li><a href="#" title="Team">Team</a></li>
+        <li><a href="#" title="Sign In">Sign In</a></li>
       </ul>
     </header>
 
     <main>
-      <section class="intro">
+      <section class="intro" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="300">
         <img src="images/illustration-intro.png" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="300" alt="">
         <h1 data-aos="fade-in" data-aos-delay="300" data-aos-duration="2500">All your files in one secure location, accessible anywhere.</h1>
         <p data-aos="fade-in" data-aos-duration="1500">
@@ -51,12 +51,12 @@
           Access them wherever you need, share and collaborate with friends
           family, and co-workers.
         </p>
-        <button class="get-started-btn" data-aos="fade-in" data-aos-duration="1500"
-        data-aos-once="true">Get Started</button>
+        <button class="get-started-btn" data-aos="fade-in"
+        data-aos-once="false"><a href="">Get Started</a></button>
       </section>
 
       <section class="advantage-presentation">
-        <div data-aos="fade-up">
+        <div data-aos="fade-up-left">
           <img src="images/icon-access-anywhere.svg" alt="">
           <h2>Access your files, anywhere</h2>
           <p>
@@ -65,7 +65,7 @@
           </p>
         </div>
 
-        <div data-aos="fade-up" data-aos-delay="500">
+        <div data-aos="fade-up" data-aos-delay="100">
           <img src="images/icon-security.svg" alt="">
           <h2>Security you can trust</h2>
           <p>
@@ -74,7 +74,7 @@
           </p>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div data-aos="fade-up">
           <img src="images/icon-collaboration.svg" alt="">
           <h2>Real-time collaboration</h2>
           <p>
@@ -83,7 +83,7 @@
           </p>
         </div>
 
-        <div data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="1000">
+        <div data-aos="fade-up-left" data-aos-delay="200">
           <img src="images/icon-any-file.svg" alt="">
           <h2>Store any type of file</h2>
           <p>
@@ -95,19 +95,19 @@
       </section>
 
       <section class="summary">
-        <img class="stay-productive-img" src="images/illustration-stay-productive.png" alt="">
+        <img class="stay-productive-img" src="images/illustration-stay-productive.png" alt="" data-aos="fade-in" data-aos-duration="2000">
         <div>
-          <h2>Stay productive, wherever you are</h2>
-          <p class="align-start">
+          <h2 data-aos="zoom-in">Stay productive, wherever you are</h2>
+          <p class="align-start" data-aos="zoom-in">
             Never let location be an issue when accessing your files. Fylo has you
             covered for all of your file storage needs.
           </p>
-          <p class="align-start">
+          <p class="align-start" data-aos="zoom-in" data-aos-duration="2000">
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required.
           </p>
-          <button class="summary-btn">
-            See how Fylo works
+          <button class="summary-btn" data-aos="fade-in" data-aos-duration="3000">
+            <a href="">See how Fylo works</a>
             <img src="images/icon-arrow.svg" alt="">
           </button>
         </div>
@@ -115,7 +115,7 @@
     </main>
 
     <section class="reviews">
-      <div class="testimonials-cell">
+      <div class="testimonials-cell" data-aos="fade-right">
         <img class="quotes" src="images/bg-quotes.png" alt="">
         <p class="align-start">
           Fylo has improved our team productivity by an order of magnitude. Since
@@ -128,7 +128,7 @@
         </div>
       </div> 
 
-      <div class="testimonials-cell">
+      <div class="testimonials-cell" data-aos="fade-right" data-aos-duration="2000">
         <p class="align-start">
           Fylo has improved our team productivity
           by an order of magnitude. Since making the switch our team has become a
@@ -141,7 +141,7 @@
         </div>
       </div>
 
-      <div class="testimonials-cell">
+      <div class="testimonials-cell" data-aos="fade-right" data-aos-duration="2500">
         <p class="align-start">
           Fylo has improved our team productivity by an order of magnitude. Since
           making the switch our team has become a well-oiled collaboration machine.
@@ -154,8 +154,8 @@
       </div>
     </section>
 
-    <footer>
-      <div class="starter">
+    <footer data-aos="fade-in">
+      <div class="starter" data-aos="zoom-in">
         <h2>Get early access today</h2> 
         <p>
           It only takes a minute to sign up and our free
@@ -165,7 +165,7 @@
   
         <form>
           <input type="email" placeholder="email@example.com">
-          <button type="submit">Get Started For Free</button>
+          <button type="submit" data-aos="fade-in" data-aos-once="false">Get Started For Free</button>
         </form>
       </div>
       <img class="logo" src="images/logo.svg" alt="">
@@ -208,7 +208,7 @@
     <script>
       AOS.init({
         duration: 1500,
-        delay: 100
+        once: true,
       });
     </script>
   </body>
