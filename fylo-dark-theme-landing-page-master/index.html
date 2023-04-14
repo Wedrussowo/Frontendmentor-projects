@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="aos.css" />
 
     <link
       rel="icon"
@@ -32,10 +32,10 @@
     </title>
   </head>
   <body>
-    <header data-aos="fade-in" data-aos-duration="2000" data-aos-delay="300">
-      <img src="images/logo.svg" alt="">
+    <header>
+      <img src="images/logo.svg" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-out" alt="">
 
-      <ul class="ul-nav">
+      <ul class="ul-nav" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-out">
         <li><a href="#" title="features">features</a></li>
         <li><a href="#" title="Team">Team</a></li>
         <li><a href="#" title="Sign In">Sign In</a></li>
@@ -43,20 +43,20 @@
     </header>
 
     <main>
-      <section class="intro" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="300">
-        <img src="images/illustration-intro.png" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="300" alt="">
-        <h1 data-aos="fade-in" data-aos-delay="300" data-aos-duration="2500">All your files in one secure location, accessible anywhere.</h1>
-        <p data-aos="fade-in" data-aos-duration="1500">
+      <section class="intro">
+        <img src="images/illustration-intro.png" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-out" data-aos-delay="500" alt="">
+        <h1 data-aos="zoom-in" data-aos-duration="800" data-aos-delay="1200">All your files in one secure location, accessible anywhere.</h1>
+        <p data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="200">
           Fylo stores all your most important files in one secure location.
           Access them wherever you need, share and collaborate with friends
           family, and co-workers.
         </p>
-        <button class="get-started-btn" data-aos="fade-in"
-        data-aos-once="false"><a href="">Get Started</a></button>
+        <button class="get-started-btn" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-once="false"
+        ><a href="">Get Started</a></button>
       </section>
 
       <section class="advantage-presentation">
-        <div data-aos="fade-up-left">
+        <div data-aos="fade-up" data-aos-offset="200">
           <img src="images/icon-access-anywhere.svg" alt="">
           <h2>Access your files, anywhere</h2>
           <p>
@@ -65,7 +65,7 @@
           </p>
         </div>
 
-        <div data-aos="fade-up" data-aos-delay="100">
+        <div data-aos="fade-up" data-aos-offset="350">
           <img src="images/icon-security.svg" alt="">
           <h2>Security you can trust</h2>
           <p>
@@ -74,7 +74,7 @@
           </p>
         </div>
 
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" data-aos-offset="200">
           <img src="images/icon-collaboration.svg" alt="">
           <h2>Real-time collaboration</h2>
           <p>
@@ -83,7 +83,7 @@
           </p>
         </div>
 
-        <div data-aos="fade-up-left" data-aos-delay="200">
+        <div data-aos="fade-up" data-aos-offset="350">
           <img src="images/icon-any-file.svg" alt="">
           <h2>Store any type of file</h2>
           <p>
@@ -207,7 +207,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        duration: 1500,
         once: true,
       });
     </script>
