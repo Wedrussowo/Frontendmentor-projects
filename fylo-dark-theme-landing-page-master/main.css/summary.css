@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: center;
     justify-self: start;
-    padding: 0 0 0.5rem 0;
+    padding: 0 0 0.2rem 0;
     margin: 0;
     white-space: nowrap;
     text-align: start;
@@ -38,10 +38,30 @@
 
   .summary-btn a {
     color: var(--Cyan-inside-call-to-action-gradient);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.1s ease-in-out;
+  }
+
+svg use {
+  transition: all 0.1s ease-in-out;
+}
+
+  .summary-btn:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    opacity: 0.9;
   }
   
-  .summary-btn img {
-    padding-left: 0.5rem ;
+  .summary-btn:hover a {
+    color: white;
+    opacity: 0.9;
+  }
+
+  .summary-btn:hover svg use {
+    fill: white;
+    opacity: 0.9;
   }
 
   @media (min-width: 1000px) {

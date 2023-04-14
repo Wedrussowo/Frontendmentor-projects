@@ -6,8 +6,8 @@ header {
     clamp(1.5rem, -0.7297rem + 9.5135vw, 7rem) 
     1.5rem;
     padding-block: 
-    clamp(1.5rem, -0.527rem + 8.6486vw, 6.5rem) 
-    1.5rem;
+    clamp(1.5rem, -0.527rem + 8.6486vw, 5rem) 
+    3.25rem;
   }
   
   header img {
