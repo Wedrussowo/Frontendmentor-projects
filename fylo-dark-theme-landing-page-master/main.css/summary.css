@@ -11,6 +11,7 @@
   }
   
   .summary h2 {
+    text-align: start;
     font-size: clamp(1.25rem, 0.4988rem + 3.2051vw, 2.5rem);
     padding-bottom: 1.5rem;
   }
@@ -83,7 +84,6 @@ svg use {
 
     .summary h2 {
       max-width: 30rem;
-      text-align: start;
     }
 
     .summary p {

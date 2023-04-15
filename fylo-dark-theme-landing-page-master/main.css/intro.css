@@ -28,9 +28,6 @@
         justify-self: center;
       }
 
-      /* .get-started-btn {
-        padding: 2.5rem rem;
-      } */
   }
   
   h1 {
@@ -39,12 +36,15 @@
     font-family: var(--font-family-headings);
     text-align: center;
     color: var(--White);
-    line-height: 1.35;
+    line-height: 1.6;
     padding-top: 2rem;
   }
   
   .intro p {
     padding-block: 1rem 2rem;
+    padding-inline: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
   .transition-function-container {

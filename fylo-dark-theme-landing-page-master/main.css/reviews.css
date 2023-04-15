@@ -1,6 +1,6 @@
 .reviews {
     padding-inline: 3rem;
-    padding-bottom: 23.5rem;
+    padding-bottom: 21rem;
     position: relative;
     display: grid;
   }
@@ -76,6 +76,7 @@
     grid-template-columns: repeat(3, auto);
     column-gap: 3rem;
     padding-inline: 10rem;
+    padding-bottom: 23.5rem;
     }
   
     .testimonials-cell {
