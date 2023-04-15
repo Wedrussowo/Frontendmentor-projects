@@ -45,6 +45,7 @@
     padding-inline: 1rem;
     font-size: 1rem;
     line-height: 1.6;
+    color: rgba(255, 255, 255, 0.801);
   }
 
   .transition-function-container {
@@ -69,6 +70,7 @@
     /* transition: background 4s ease; */
     z-index: 1;
     position: relative;
+    cursor: pointer;
   }
 
   .get-started-btn::before {
@@ -88,7 +90,6 @@
   .get-started-btn:hover::before {
     transform: scale(1.01);
     opacity: 1;
-    cursor: pointer;
   }
   
   @media (min-width: 600px) {

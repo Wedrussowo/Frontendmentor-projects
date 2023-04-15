@@ -18,29 +18,17 @@
   }
 
   .quotes {
-    width: 1.6rem;
     position: absolute;
-    top: -1.15rem;
-    left: 0.5rem;
+    width: 4.5rem;
+    top: -2.7rem;
+    left: -1rem;
     z-index: -1;
-  }
-
-  @media (min-width: 1000px) {
-    .quotes {
-      width: 4.5rem;
-      top: -3rem;
-      left: -0.7rem;
-    }
   }
 
   @media (min-width: 600px) and (max-width: 999px) {
     .testimonials-cell {
       margin-inline: clamp(0rem, -19.5rem + 45.7143vw, 10rem);
     }
-  }
-  
-  .testimonials-cell p {
-    opacity: 0.7;
   }
   
   .profile {

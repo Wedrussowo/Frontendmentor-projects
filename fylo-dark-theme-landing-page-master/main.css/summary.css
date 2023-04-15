@@ -42,12 +42,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    transition: all 0.1s ease-in-out;
   }
-
-svg use {
-  transition: all 0.1s ease-in-out;
-}
 
   .summary-btn:hover {
     border-bottom: 1px solid white;
